@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniCart</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <style type="text/tailwindcss">
+        @layer components {
+            
+        }
+        @layer utilities{
+            button{
+                @apply rounded-xl m-[5px] p-[10px] w-[200px]
+            }
+            
+        }
+    </style>
+</head>
+<body  class="bg-gradient-to-b from-purple-200 to-violet-400"></body>
+ 
+    <nav class="px-[20px] flex justify-between items-center ">
+        <div><h1 class="text-3xl font-bold text-violet-800 mx-[10px]" >UniCart</h1>
+</div>
+        <div class="flex justify-center items-center h-[10vh] relative">
+            <div class="bg-gradient-to-r from-violet-400 to-pink-500 blur-sm w-[55vh] h-[5vh] -z-5 absolute"></div>
+            <input id="search" type="text" placeholder="Search" class="flex items-center p-2 w-[50vh] h-[5vh] border bg-white rounded-l-[2.5vh] mr-0 z-0">
+            <button class="flex items-center p-1 w-[5vh] h-[5vh] border bg-white rounded-l-[0] rounded-r-[2.5vh] hover:bg-gray-500 ml-l z-0">🔍</button>
+        </div>
+        <div class="p-[10px] rounded-3xl bg-gradient-to-r from-pink-400 to-violet-400 hover:bg-white hover:scale-110 text-white">
+            👤 </div>
+    </nav>   
+    <main class="flex">
+        <div class="w-[250px] h-screen bg-gradient-to-b from-purple-300 to-pink-300 flex flex-col items-center py-[20px] relative">
+            <button class="bg-gradient-to-r from-pink-300 via-pink-400 to-violet-400 border-1 border-p hover:bg-white hover:scale-110 text-white font-bold">Dashboard</button>
+            <button class="bg-gradient-to-r from-pink-300 via-pink-400 to-violet-400 border-1 border-white hover:bg-white hover:scale-110 text-white font-bold">Favorites</button>
+            <button class="bg-gradient-to-r from-pink-300 via-pink-400 to-violet-400 border-1 border-white hover:bg-white hover:scale-110 text-white font-bold">Compare List</button>
+            <button class="bg-gradient-to-r from-pink-300 via-pink-400 to-violet-400 border-1 border-white hover:bg-white hover:scale-110 text-white font-bold">Settings</button>
+            <button class="bg-gradient-to-r from-pink-300 via-pink-400 to-violet-400 border-1 border-white hover:bg-white hover:scale-110 text-white font-bold">Help</button>
+        </div>
+        <div class="flex-1">
+            <div class="flex justify-between">
+                <div>
+                    <h2 class="text-xl font-bold text-violet-800 mx-[10px]">My Products</h2>
+                    <p class="mx-[10px] text-purple-800 ">Welcome to your product space.
+                        All your save and trending items are organized here so you can browse,compare and manage them anytime; All in one cozy place.
+                    </p>
+                    </div>
+                   <div class="my-[20px]">
+                    <button class="shadow-xl bg-gradient-to-r from-pink-400 to-violet-400 hover:scale-110 text-white font-bold">+ Add Products</button>
+                   </div></div>
+            <div class="flex items-center ml-[20px] ">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  xl:grid-cols-4 2xl:grid-cols-5 place-items-center gap-[30px] mt-[30px] ">
+               <div class="flex-1 justify-center  ">
+                <div class=" rounded-xl bg-pink-300 border-1 border-white/50 mx-[10px] h-[300px] w-[250px] text-center  text-purple-800 font-bold flex flex-col items-center hover:bg-purple-300 hover:scale-110">
+                    <div class="rounded-xl bg-white h-[200px] w-[250px] overflow-hidden flex items-center">
+                         <img class="rounded-xl"src="pasted-image.jpg" alt="My photo">
+                    </div>
+                    <h1 class="font-bold text-white ">SKIN1004 Madagascar Centella Hyalu-Cica Water-Fit Sun Serum SPF50+ PA++++ 50ml</h1>
+                    <p>Price:1350</p>
+                    <p>website: skincarebd.com </p>
+               </div> 
+               </div>
+               
+            <div class="flex-1 justify-center">
+               <div class=" rounded-xl bg-pink-300 border-1 border-white/50 mx-[10px] h-[300px] w-[250px] text-center  text-purple-800 font-bold flex flex-col items-center hover:bg-purple-300 hover:scale-110">
+                    <div class="rounded-xl bg-white h-[200px] w-[250px] overflow-hidden flex items-center">
+                         <img class="rounded-xl"src="e:\University\Level 3 Term 1\Lab\Software engineeing\Unicart\beauty-of-joseon-relief-sun-aqua-fresh-review.jpg" alt="My photo">
+                    </div>
+                    <h1 class="font-bold text-white ">Beauty of Joseon Relief Sun Aqua-fresh Rice + B5 50ml</h1>
+                    <p>Price: 1650tk</p>
+                    <p>website: perfecto.com</p>
+               </div> 
+               </div>
+                <div class="flex-1 justify-center">
+                <div class=" rounded-xl bg-pink-300 border-1 border-white/50 mx-[10px] h-[300px] w-[250px] text-center  text-purple-800 font-bold flex flex-col items-center hover:bg-purple-300 hover:scale-110">
+                    <div class="rounded-xl bg-white h-[200px] w-[250px] overflow-hidden flex items-center">
+                         <img class="rounded-xl"src="https://cdn.beautybooth.com.bd/uploads/all/2_40.webp" alt="My photo">
+                    </div>
+                    <h1 class="font-bold text-white ">Sheglam Take A Hint Lip Tint (3.5ml)</h1>
+                    <p>Price: 900tk</p>
+                    <p>website: liraimportltd.com</p>
+               </div>
+               </div>
+                <div class="flex-1 justify-center">
+                <div class=" rounded-xl bg-pink-300 border-1 border-white/50 mx-[10px] h-[300px] w-[250px] text-center  text-purple-800 font-bold flex flex-col items-center hover:bg-purple-300 hover:scale-110">
+                    <div class="rounded-xl bg-white h-[200px] w-[250px] overflow-hidden flex items-center">
+                         <img class="rounded-xl"src="https://skinplusbd.com/public/uploads/all/cxjcun5wecf8YTqz4zIVKVa7x0vtLOQxbDku95Ab.webp" alt="My photo">
+                    </div>
+                    <h1 class="font-bold text-white ">The Ordinary Glycolic Acid 7% Exfoliating Toner 240ml</h1>
+                    <p>Price: 2750tk</p>
+                    <p>website: skinplusbd.com </p>
+               </div>
+               </div>
+                <div class="flex-1 justify-center">
+                <div class=" rounded-xl bg-pink-300 border-1 border-white/50 mx-[10px] h-[300px] w-[250px] text-center  text-purple-800 font-bold flex flex-col items-center hover:bg-purple-300 hover:scale-110">
+                    <div class="rounded-xl bg-white h-[200px] w-[250px] overflow-hidden flex items-center">
+                         <img class="rounded-xl"src="e:\University\Level 3 Term 1\Lab\Software engineeing\Unicart\CMXS09-VB.jpg" alt="My photo">
+                    </div>
+                    <h1 class="font-bold text-white ">Celimax The Vita A Retinal Shot Tightening Booster 15ml</h1>
+                    <p>Price: 1350tk</p>
+                    <p>website: groomlybd.com </p>
+               </div>
+               </div>
+            </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        //Javasctript
+    </script>
+</body>
+</html>
