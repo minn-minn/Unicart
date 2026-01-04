@@ -6,20 +6,20 @@ Each user has their own secure cart, favorites, and product history powered by F
 
 ---
 
-## 🚀 Features
+## Features
 
-- 🔐 Firebase Authentication (Login & Register)
-- 👤 User profiles with username
-- 🛍️ Automatic cart detection (Chrome Extension)
-- ☁️ Cloud-stored cart items (Firestore)
-- ❤️ Favorite products (black → red heart toggle)
-- 📦 Per-user cart isolation
-- 🎨 Tailwind CSS UI
-- 🔒 Secure Firestore rules
+- Firebase Authentication (Login & Register)
+- User profiles with username
+- Automatic cart detection (Chrome Extension)
+- Cloud-stored cart items (Firestore)
+- Favorite products (black → red heart toggle)
+- Per-user cart isolation
+- Tailwind CSS UI
+- Secure Firestore rules
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 
@@ -47,7 +47,7 @@ unicart/
 
 ---
 
-## 🔥 Firebase Setup
+## Firebase Setup
 
 ### Authentication
 - Email / Password authentication enabled
@@ -77,7 +77,7 @@ users (collection)
 
 ---
 
-## 🔐 Firestore Security Rules
+## Firestore Security Rules
 
 ```
 
@@ -104,7 +104,7 @@ match /users/{userId} {
 
 ---
 
-## 🧭 Page Flow
+## Page Flow
 
 | Page | Purpose |
 |------|--------|
@@ -117,7 +117,7 @@ match /users/{userId} {
 
 ---
 
-## ❤️ Favorites
+## Favorites
 
 - Each product card includes a heart icon
 - 🖤 → ❤️ toggles favorite state
@@ -125,7 +125,7 @@ match /users/{userId} {
 
 ---
 
-## 🧩 Chrome Extension Overview
+## Chrome Extension Overview
 
 - Detects **Add to Cart** button clicks
 - Extracts:
@@ -142,7 +142,7 @@ users/{uid}/cartItems
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - HTML
 - Tailwind CSS
@@ -153,9 +153,9 @@ users/{uid}/cartItems
 
 ---
 
-## 📌 Project Status
+## Project Status
 
-🚧 In active development
+In active development
 
 Planned features:
 - Favorites page
