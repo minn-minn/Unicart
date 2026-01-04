@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>UniCart Login</title>
+</head>
+<body>
+  <h3>UniCart</h3>
+
+  <div id="loggedOutView">
+    <input id="email" placeholder="Email" autocomplete="username" />
+    <input id="password" type="password" placeholder="Password" autocomplete="current-password" />
+    <button id="loginBtn">Login</button>
+  </div>
+
+  <div id="loggedInView" style="display:none;">
+    <div>Logged in as: <span id="uid"></span></div>
+    <button id="logoutBtn">Logout</button>
+  </div>
+
+  <p id="status"></p>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
